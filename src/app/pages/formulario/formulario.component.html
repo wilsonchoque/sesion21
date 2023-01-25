@@ -1,0 +1,36 @@
+<div class="container p-1 mx-auto rounded w-3/4 mt-5">
+
+    <h1 class="text-center text-white font-sans text-3xl uppercase font-bold">Formulario</h1>
+
+    <form class="example-form" [formGroup]="form" (submit)="registrar()">
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Nombre</mat-label>
+          <input type="text" formControlName="nombre" class="caja" matInput >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Apellido</mat-label>
+          <input type="text" formControlName="apellido" class="caja" matInput >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Usuario</mat-label>
+          <input type="text" formControlName="usuario" class="caja" matInput >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Email</mat-label>
+          <input type="email" formControlName="email" class="caja" matInput >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Asunto</mat-label>
+          <input type="text" formControlName="asunto" class="caja" matInput >
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+            <mat-label class="etiqueta">Mensaje</mat-label>
+            <textarea matInput formControlName="mensaje" class="caja" style="resize: none;"></textarea>
+        </mat-form-field>
+
+        <div class="mt-1 w-40 mx-auto  ">
+            <button class="rounded px-8 py-3 bg-red-700 hover:bg-red-900 font-sans  text-xl text-white">Enviar</button>
+        </div>
+    </form>     
+</div>

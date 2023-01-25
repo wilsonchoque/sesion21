@@ -1,0 +1,31 @@
+<div class="container  p-5 w-1/2 mx-auto mt-5 rounded">
+
+    <h1 class="titulo">Login</h1>
+
+    <!-- <div class="mt-3 w-96 mx-auto p-2">
+        <label  class="form-label font-mono p-2">Usuario:</label>
+        <input type="text" #usuarioInput class="form-control ml-5 border border-black rounded px-2 w-4/6" placeholder="Ingrese usuario">
+    </div>
+    
+    <div class="mt-3 w-96 mx-auto p-2">
+        <label  class="form-label font-mono p-2">Password:</label>
+        <input type="password" #passwordInput class="form-control ml-3 border border-black rounded px-2 w-4/6" placeholder="Ingrese contraseña">
+    </div> -->
+
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label class="etiqueta">Usuario</mat-label>
+        <input #usuarioInput type="text"class="caja" matInput >
+      </mat-form-field>
+      
+      <mat-form-field class="example-full-width">
+        <mat-label class="etiqueta">Contraseña</mat-label>
+        <input #passwordInput type="password" class="caja" matInput >
+      </mat-form-field>
+    </form>    
+    <div class="mt-3 p-3 w-56 mx-auto  ">
+        <button class="rounded px-4 py-2 bg-blue-800  font-sans text-xl text-white" 
+        (click)="verificar(usuarioInput.value, passwordInput.value)" >Iniciar Sesion</button>
+    </div>
+</div>

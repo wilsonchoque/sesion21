@@ -1,0 +1,17 @@
+.example-form {
+  object-position: center;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+  padding: 5px;
+  margin-left: 20px;
+}
+.titulo{
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+}

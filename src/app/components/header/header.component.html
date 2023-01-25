@@ -1,0 +1,15 @@
+<div class="container my-2 bg-zinc-800 mx-auto border border-black p-2 rounded flex">
+    <ul class="flex flex-row w-3/4">
+        <button mat-button class="p-5 text-xl font-sans py-1 text-white " routerLinkActive="bg-blue-700 rounded py-2"
+        routerLink="/formulario">Formulario</button>       
+        <button mat-button class="p-5 text-xl font-sans py-1 text-white " routerLinkActive="bg-blue-700 rounded py-2"
+        routerLink="/post">Post</button>
+        <button mat-button class="p-5 text-xl font-sans py-1 text-white " routerLinkActive="bg-blue-700 rounded py-2"
+        routerLink="/home">Home</button>                 
+    </ul>
+
+    <ul class="flex flex-row-reverse w-1/4">
+        <button mat-button class="p-5 text-xl font-sans py-1 text-white " [routerLinkActiveOptions]="{exact: true}" routerLinkActive="bg-red-700 rounded py-2"
+        routerLink="/">Login</button>        
+    </ul>
+</div>
